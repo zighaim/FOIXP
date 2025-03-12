@@ -27,9 +27,10 @@ Ikuti petunjuk di bawah ini untuk terhubung ke IXP kami menggunakan pengaturan T
 
 ## Step 1 : Copy the Example File
 
-1. Navigate to the **[Examples](https://github.com/muh-ramadhan/FOIXP/blob/main/Examples)** folder in the GitHub repository.
-2. Copy the content from `Examples` to your local system.
-3. Modify the content of the file as shown below:
+1. Fork this Repository to your local Device
+2. Navigate to the **[Examples](https://github.com/muh-ramadhan/FOIXP/blob/main/Examples)** folder in the GitHub repository.
+3. Copy the content from `Examples` to your local system.
+4. Modify the content of the file as shown below:
 ```
 aut-num:      4200000000                 #As the Private Number that you will use
 endpoint:     2001:470:23:394::2/64      #Your IPv6 Tunnel Endpoints / Client IPv6 Address
@@ -38,9 +39,10 @@ e-mail:       john.doe@example.com       #Your email
 ```
    
 ## Langkah 1 : Salin File Contoh
-1. Arahkan ke folder **[Examples](https://github.com/muh-ramadhan/FOIXP/blob/main/Examples)** di repositori GitHub.
-2. Salin konten dari file `Examples` ke sistem lokal Anda.
-3. Modifikasi konten file seperti di bawah ini:
+1. Fork Repository ini ke Perangkat lokal Anda
+2. Arahkan ke folder **[Examples](https://github.com/muh-ramadhan/FOIXP/blob/main/Examples)** di repositori GitHub.
+3. Salin konten dari file `Examples` ke sistem lokal Anda.
+4. Modifikasi konten file seperti di bawah ini:
 ```
 aut-num:      4200000000                 #Sebagai Nomor Pribadi yang akan Anda gunakan
 endpoint:     2001:470:23:394::2/64      #Titik Akhir Terowongan IPv6 Anda / Alamat IPv6 Klien
@@ -91,6 +93,7 @@ Ganti `YOUR_ROUTED_PREFIX_64` dengan prefix IPv6 yang ditugaskan oleh HE Tunnel,
 /routing bgp instance add name=bgp as=YOUR_AS_NUMBER
 ```
 Replace `YOUR_AS_NUMBER` with the AS Number you created in the pull request file.
+
 Ganti `YOUR_AS_NUMBER` dengan AS Number yang Anda buat di file pull request.
 
 2. Add the BGP peer:
@@ -99,6 +102,7 @@ Ganti `YOUR_AS_NUMBER` dengan AS Number yang Anda buat di file pull request.
 /routing bgp peer add name=peer instance=bgp remote-address=2001:470:35:72::2 remote-as=YOUR_AS_NUMBER multihop=yes address-families=ipv6
 ```
 Replace `remote-as=YOUR_AS_NUMBER` with the AS Number you have requested.
+
 Ganti `remote-as=YOUR_AS_NUMBER` dengan AS Number yang Anda minta.
 
 3. Add your routed IPv6 prefix to BGP:
@@ -107,6 +111,7 @@ Ganti `remote-as=YOUR_AS_NUMBER` dengan AS Number yang Anda minta.
 /routing bgp network add network=YOUR_ROUTED_PREFIX_64_IPV6
 ```
 Replace `YOUR_ROUTED_PREFIX_64_IPV6` with the prefix you received from HE Tunnel, for example `2001:470:24:39b::/64`.
+
 Ganti `YOUR_ROUTED_PREFIX_64_IPV6` dengan prefix yang Anda terima dari HE Tunnel, misalnya `2001:470:24:39b::/64`.
 
 ## Troubleshooting / Pemecahan Masalah
