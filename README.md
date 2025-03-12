@@ -54,7 +54,7 @@ e-mail:       john.doe@example.com       #mail Anda
 4. Wait for the approval of your pull request.
    
 ## Langkah 2 : Buat Pull Request
-1. Ganti nama `Contoh` menjadi aut-num (Contoh 4200002000, 4202000132, dst.)
+1. Ganti nama `Examples` menjadi aut-num (Contoh 4200002000, 4202000132, dst.)
 2. Setelah memodifikasi file, unggah ke repositori GitHub Anda.
 3. Buat pull request (PR) ke repositori FOIXP.
 4. Tunggu persetujuan pull request Anda.
@@ -66,8 +66,7 @@ After your pull request is approved, follow the steps below to set up the GRE6 T
 Setelah pull request Anda disetujui, ikuti langkah-langkah berikut untuk mengatur GRE6 Tunnel di router MikroTik Anda.
 
 1. Create the GRE6 tunnel interface:
-
-Buat interface GRE6 tunnel:
+   - Buat interface GRE6 tunnel:
 ```
 /interface gre6 add name=gre6 remote-address=2001:470:35:72::2 local-address=YOUR_CLIENT_IPV6_ADDRESS
 ```
@@ -76,8 +75,7 @@ Replace `YOUR_CLIENT_IPV6_ADDRESS` with the IPv6 address from your HE tunnel set
 Ganti `YOUR_CLIENT_IPV6_ADDRESS` dengan alamat IPv6 dari pengaturan HE tunnel Anda.
 
 2. Add the IPv6 address to the GRE6 interface:
-
-Tambahkan alamat IPv6 ke interface GRE6:
+   - Tambahkan alamat IPv6 ke interface GRE6:
 ```
 /ipv6 address add address=YOUR_ROUTED_PREFIX_64 interface=gre6 advertise=no
 ```
@@ -88,7 +86,7 @@ Ganti `YOUR_ROUTED_PREFIX_64` dengan prefix IPv6 yang ditugaskan oleh HE Tunnel,
 ## Step 4 : Configure BGP on MikroTik / Langkah 4: Konfigurasi BGP di MikroTik
 
 1. Add a new BGP instance:
-   Tambahkan instance BGP baru:
+   - Tambahkan instance BGP baru:
 ```
 /routing bgp instance add name=bgp as=YOUR_AS_NUMBER
 ```
@@ -96,7 +94,7 @@ Replace `YOUR_AS_NUMBER` with the AS Number you created in the pull request file
 Ganti `YOUR_AS_NUMBER` dengan AS Number yang Anda buat di file pull request.
 
 2. Add the BGP peer:
-   Tambahkan peer BGP:
+   - Tambahkan peer BGP:
 ```
 /routing bgp peer add name=peer instance=bgp remote-address=2001:470:35:72::2 remote-as=YOUR_AS_NUMBER multihop=yes address-families=ipv6
 ```
@@ -104,7 +102,7 @@ Replace `remote-as=YOUR_AS_NUMBER` with the AS Number you have requested.
 Ganti `remote-as=YOUR_AS_NUMBER` dengan AS Number yang Anda minta.
 
 3. Add your routed IPv6 prefix to BGP:
-   Tambahkan prefix IPv6 yang Anda routing ke BGP:
+   - Tambahkan prefix IPv6 yang Anda routing ke BGP:
 ```
 /routing bgp network add network=YOUR_ROUTED_PREFIX_64_IPV6
 ```
@@ -116,11 +114,13 @@ Ganti `YOUR_ROUTED_PREFIX_64_IPV6` dengan prefix yang Anda terima dari HE Tunnel
 1. Ensure that your GRE tunnel is correctly configured.
 2. Verify that the BGP instance and peer settings are correctly entered.
 3. Check your IPv6 routing table to ensure that the prefix is advertised correctly.
+4. If you need another way to connect for example IPIPv6, EOIPv6 you can send me a message at support@dalonet.com
 
 ### Jika Anda mengalami masalah selama pengaturan, periksa hal-hal berikut:
 1. Pastikan bahwa tunnel GRE Anda telah dikonfigurasi dengan benar.
 2. Verifikasi bahwa instance BGP dan pengaturan peer telah dimasukkan dengan benar.
 3. Periksa tabel routing IPv6 Anda untuk memastikan prefix telah diiklankan dengan benar.
+4. Jika Anda memerlukan cara lain untuk terhubung misalnya IPIPv6, EOIPv6 Anda dapat mengirim pesan kepada saya di support@dalonet.com
 
 ## License / Lisensi
 This project is licensed under the MIT License - see the LICENSE file for details.
