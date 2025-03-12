@@ -6,40 +6,13 @@ Follow the instructions below to connect to our IXP using your HE Tunnel setting
 Selamat datang di **FOIXP**, Internet Exchange Point (IXP) gratis dan terbuka untuk peering IPv6 menggunakan Nomor AS Pribadi dan Terowongan HE IPv6 yang Anda dapatkan dari Tunnel Broker atau penyedia lainnya.
 Ikuti petunjuk di bawah ini untuk terhubung ke IXP kami menggunakan pengaturan Terowongan HE Anda.
 
-## Tujuan Pembuatan FOIXP / Purpose of FOIXP Creation
-**FOIXP** ​​(Free Open Internet Exchange Point) is an open **Internet Exchange Point (IXP)** designed to provide a free IPv6 peering platform. The main goals of creating FOIXP are to:
-
-**FOIXP** (Free Open Internet Exchange Point) adalah sebuah **Internet Exchange Point (IXP)** terbuka yang dirancang untuk menyediakan platform peering IPv6 secara gratis. Tujuan utama pembuatan FOIXP adalah untuk:
-
-### 1. **Accelerating IPv6 Network Development / Mempercepat Pengembangan Jaringan IPv6**
-**FOIXP** aims to accelerate the adoption and deployment of IPv6 networks by providing easier access for users and ISPs to directly connect and exchange traffic through IPv6 peering.
-
-**FOIXP** bertujuan untuk mempercepat adopsi dan penyebaran jaringan IPv6 dengan memberikan akses yang lebih mudah kepada pengguna dan penyedia layanan internet untuk terhubung langsung dan saling bertukar trafik data melalui peering IPv6.
-
-### 2. **Improving Internet Service Quality / Meningkatkan Kualitas Layanan Internet**
-With **FOIXP**, connectivity between ISPs will be more efficient, reducing latency and improving the quality and speed of internet services for end-users.
-
-Dengan adanya **FOIXP**, konektivitas antar penyedia layanan internet (ISP) akan lebih efisien, yang akan mengurangi latency dan meningkatkan kualitas serta kecepatan layanan internet bagi pengguna akhir.
-
-### 3. **Supporting Open and Free Network Infrastructure / Mendukung Infrastruktur Jaringan yang Terbuka dan Gratis**
-**FOIXP** aims to create an open, transparent, and free peering ecosystem for anyone with an IPv6 network connection that can connect via the HE (Hurricane Electric) tunnel. This allows ISPs, hosting providers, and individuals to peer without additional costs.
-
-**FOIXP** bertujuan untuk menciptakan ekosistem peering yang terbuka, transparan, dan gratis untuk siapa saja yang memiliki koneksi jaringan IPv6 yang dapat terhubung melalui tunnel HE (Hurricane Electric). Ini memungkinkan ISP, penyedia layanan hosting, dan individu yang ingin melakukan peering untuk berinteraksi tanpa biaya tambahan.
-
-### 4. **Improving Service Availability and Reliability / Meningkatkan Ketersediaan dan Keandalan Layanan**
-**FOIXP** will help increase the reliability of the internet network by providing multiple peering routes for ISPs and users to exchange data. This reduces dependence on a single path or provider, improving network redundancy and stability.
-
-**FOIXP** akan membantu meningkatkan keandalan jaringan internet dengan memberikan beberapa jalur peering bagi ISP dan pengguna untuk saling bertukar data. Ini dapat mengurangi ketergantungan pada satu jalur atau penyedia layanan tunggal, meningkatkan redundansi dan stabilitas jaringan.
-
-### 5. **Encouraging Collaboration and Knowledge Exchange / Mendorong Kolaborasi dan Pertukaran Pengetahuan**
-By making this IXP open and free, FOIXP encourages collaboration among various network providers and other stakeholders in the development of internet infrastructure. It provides opportunities for developers and network administrators to share knowledge and experiences.
-
-Dengan membuat IXP ini terbuka dan gratis, FOIXP mendorong kolaborasi antar berbagai penyedia jaringan dan pihak lain yang berkepentingan dalam pengembangan infrastruktur jaringan internet. Ini memberikan kesempatan bagi pengembang dan administrator jaringan untuk berbagi pengetahuan dan pengalaman.
-
-### 6. **Supporting Local Network Development / Mendukung Perkembangan Jaringan Lokal**
-FOIXP can also be used to enhance the development of local network infrastructure, allowing smaller service providers and local communities to more easily connect to the international network through affordable and accessible IPv6 peering.
-
-FOIXP juga dapat digunakan untuk meningkatkan perkembangan infrastruktur jaringan lokal, memungkinkan penyedia layanan kecil dan komunitas lokal untuk lebih mudah terhubung dengan jaringan internasional melalui peering IPv6 yang terjangkau dan mudah diakses.
+## Purpose of FOIXP Creation / Tujuan Pembuatan FOIXP
+1. **Accelerating IPv6 Network Development / Mempercepat Pengembangan Jaringan IPv6**
+2. **Improving Internet Service Quality / Meningkatkan Kualitas Layanan Internet**
+3. **Supporting Open and Free Network Infrastructure / Mendukung Infrastruktur Jaringan yang Terbuka dan Gratis**
+4. **Improving Service Availability and Reliability / Meningkatkan Ketersediaan dan Keandalan Layanan**
+5. **Encouraging Collaboration and Knowledge Exchange / Mendorong Kolaborasi dan Pertukaran Pengetahuan**
+6. **Supporting Local Network Development / Mendukung Perkembangan Jaringan Lokal**
 
 ## Prerequisites
 1. A registered account on [HE Tunnel](https://tunnelbroker.net/) with a working tunnel setup.
