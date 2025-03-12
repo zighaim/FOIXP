@@ -1,0 +1,4 @@
+aut-num:      4200000000
+endpoint:     2001:470:23:394::2/64
+cidr:         2001:470:24:39b::/64
+e-mail:       support@dalonet.com
