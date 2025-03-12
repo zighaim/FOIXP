@@ -1,0 +1,4 @@
+aut-num:      4200000000                 #As the Private Number that you will use
+endpoint:     2001:470:23:394::2/64      #Your IPv6 Tunnel Endpoints / Client IPv6 Address
+cidr:         2001:470:24:39b::/64       #Your Routed IPv6 Prefixes / Routed /64
+e-mail:       john.doe@example.com       #Your email
